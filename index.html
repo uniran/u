@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ecosistemas: Flujo de Energía</title>
+    <title>Ecosistemas: Ecología y Flujo de Energía</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,700&family=Source+Sans+3:wght@300;400;600&display=swap" rel="stylesheet">
@@ -34,7 +34,6 @@
             justify-content: center;
         }
 
-        /* Background texture */
         body::before {
             content: "";
             position: absolute;
@@ -99,7 +98,7 @@
 
         h2 {
             font-family: 'Playfair Display', serif;
-            font-size: 2.5rem;
+            font-size: 2.2rem;
             line-height: 1.2;
             margin-bottom: 30px;
             color: #fff;
@@ -124,17 +123,16 @@
         }
 
         .answer-text {
-            font-size: 1.4rem;
+            font-size: 1.3rem;
             font-weight: 600;
         }
 
         .explanation {
-            font-size: 1.1rem;
+            font-size: 1.05rem;
             line-height: 1.6;
             color: rgba(244, 241, 222, 0.8);
         }
 
-        /* Controls */
         .controls {
             display: flex;
             justify-content: space-between;
@@ -172,7 +170,7 @@
 
         .dots {
             display: flex;
-            gap: 10px;
+            gap: 8px;
         }
 
         .dot {
@@ -189,7 +187,6 @@
             transform: scale(1.5);
         }
 
-        /* Progress Bar */
         .progress-bar {
             position: absolute;
             bottom: 0;
@@ -202,8 +199,8 @@
 
         @media (max-width: 768px) {
             .slide { padding: 40px 30px; }
-            h2 { font-size: 1.8rem; }
-            .slideshow-container { height: auto; min-height: 500px; }
+            h2 { font-size: 1.6rem; }
+            .slideshow-container { height: auto; min-height: 600px; }
         }
     </style>
 </head>
@@ -211,48 +208,92 @@
 
     <div class="slideshow-container" id="slideshow">
         <div class="slides-wrapper">
-            <!-- Slide 1 -->
+            <!-- Slide 1 (info2.txt.txt) -->
             <div class="slide active">
-                <div class="slide-number">01 / 04</div>
+                <div class="slide-number">01 / 08</div>
+                <h2>¿Cuál de las siguientes opciones define correctamente a una población en ecología?</h2>
+                <div class="answer-box">
+                    <span class="answer-label">Respuesta Correcta</span>
+                    <div class="answer-text">C) Se caracteriza por la pertenencia de una misma especie, la coexistencia en un espacio-tiempo y la capacidad de interacción biológica.</div>
+                </div>
+                <p class="explanation">Es requisito fundamental que sean de la misma especie, compartan el mismo espacio al mismo tiempo y puedan interactuar entre ellos (por ejemplo, para reproducirse o competir por comida).</p>
+            </div>
+
+            <!-- Slide 2 (info2.txt.txt) -->
+            <div class="slide">
+                <div class="slide-number">02 / 08</div>
+                <h2>La intensidad de la competencia por recursos se mide principalmente a través de:</h2>
+                <div class="answer-box">
+                    <span class="answer-label">Respuesta Correcta</span>
+                    <div class="answer-text">A) Densidad de la población</div>
+                </div>
+                <p class="explanation">La densidad mide el número de individuos por unidad de superficie. A mayor densidad, la competencia por recursos limitados (como alimento, agua o refugio) se vuelve mucho más intensa.</p>
+            </div>
+
+            <!-- Slide 3 (info2.txt.txt) -->
+            <div class="slide">
+                <div class="slide-number">03 / 08</div>
+                <h2>Cuando una población alcanza un equilibrio limitado por recursos, ¿qué tipo de crecimiento es?</h2>
+                <div class="answer-box">
+                    <span class="answer-label">Respuesta Correcta</span>
+                    <div class="answer-text">C) Crecimiento de tipo logístico</div>
+                </div>
+                <p class="explanation">Ocurre cuando una población crece rápido al principio, pero luego se estabiliza al llegar a la "capacidad de carga" de su entorno porque los recursos disponibles se agotan o limitan.</p>
+            </div>
+
+            <!-- Slide 4 (info2.txt.txt) -->
+            <div class="slide">
+                <div class="slide-number">04 / 08</div>
+                <h2>¿Cuál de los siguientes NO es un factor que determine el potencial biótico de una especie?</h2>
+                <div class="answer-box">
+                    <span class="answer-label">Respuesta Correcta</span>
+                    <div class="answer-text">A) La salinidad del suelo o pH</div>
+                </div>
+                <p class="explanation">El potencial biótico depende netamente de atributos biológicos. La salinidad y el pH son componentes químicos abióticos del entorno físico, no atributos biológicos de la especie.</p>
+            </div>
+
+            <!-- Slide 5 (informacion.txt) -->
+            <div class="slide">
+                <div class="slide-number">05 / 08</div>
                 <h2>¿Cuál es la principal fuente de energía en los ecosistemas?</h2>
                 <div class="answer-box">
                     <span class="answer-label">Respuesta Correcta</span>
                     <div class="answer-text">A) El sol</div>
                 </div>
-                <p class="explanation">Casi toda la energía que impulsa la dinámica de la vida proviene del sol en forma de energía lumínica. Esta luz es el motor inicial imprescindible; sin ella, los ecosistemas no tendrían cómo iniciar la producción de alimento.</p>
+                <p class="explanation">Casi toda la energía proviene del sol en forma de energía lumínica. Sin ella, los ecosistemas no tendrían cómo iniciar la producción de materia orgánica.</p>
             </div>
 
-            <!-- Slide 2 -->
+            <!-- Slide 6 (informacion.txt) -->
             <div class="slide">
-                <div class="slide-number">02 / 04</div>
+                <div class="slide-number">06 / 08</div>
                 <h2>¿Qué tipo de organismos son la puerta de entrada al flujo de energía?</h2>
                 <div class="answer-box">
                     <span class="answer-label">Respuesta Correcta</span>
                     <div class="answer-text">A) Productores</div>
                 </div>
-                <p class="explanation">Organismos autótrofos (plantas, algas, cianobacterias) captan la energía del sol y la transforman en materia orgánica mediante la fotosíntesis, convirtiéndose en el primer eslabón obligatorio para la vida.</p>
+                <p class="explanation">Organismos autótrofos captan la energía del sol y la transforman en materia orgánica mediante la fotosíntesis, siendo el primer eslabón obligatorio para el resto de los animales.</p>
             </div>
 
-            <!-- Slide 3 -->
+            <!-- Slide 7 (informacion.txt) -->
             <div class="slide">
-                <div class="slide-number">03 / 04</div>
+                <div class="slide-number">07 / 08</div>
                 <h2>¿Qué representan las pirámides alimenticias en los ecosistemas?</h2>
                 <div class="answer-box">
                     <span class="answer-label">Respuesta Correcta</span>
                     <div class="answer-text">B) La transferencia de energía alimenticia</div>
                 </div>
-                <p class="explanation">Ilustran la transferencia a través de niveles tróficos. Muestran cómo la energía fluye desde la base hacia la cima, disipándose principalmente en forma de calor y a través de la respiración.</p>
+                <p class="explanation">Muestran cómo la energía fluye desde la base hacia la cima, disipándose principalmente en forma de calor y a través de la respiración en cada nivel trófico.</p>
             </div>
 
-            <!-- Slide 4 -->
+            <!-- Slide 8 (informacion.txt) -->
             <div class="slide">
-                <div class="slide-number">04 / 04</div>
+                <div class="slide-number">08 / 08</div>
                 <h2>¿Qué hacen los descomponedores con la materia acumulada?</h2>
                 <div class="answer-box">
                     <span class="answer-label">Respuesta Correcta</span>
                     <div class="answer-text">D) La transforman y la dejan disponible</div>
                 </div>
-                <p class="explanation">Bacterias y hongos actúan como recicladores finales, degradando la materia orgánica en minerales inorgánicos simples, devolviendo nutrientes esenciales al suelo para cerrar el ciclo de la materia.</p>
+                <p class="explanation">Actúan como recicladores finales, degradando la materia orgánica en minerales inorgánicos simples, devolviendo nutrientes esenciales al suelo para cerrar el ciclo de la materia.</p>
             </div>
         </div>
 
@@ -261,7 +302,12 @@
                 <span>&larr;</span> Anterior
             </button>
             <div class="dots" id="dots">
+                <!-- Dots will be generated dynamically or kept manually -->
                 <div class="dot active"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
                 <div class="dot"></div>
                 <div class="dot"></div>
                 <div class="dot"></div>
@@ -317,9 +363,8 @@
         nextBtn.addEventListener('click', nextSlide);
         prevBtn.addEventListener('click', prevSlide);
 
-        // Click on slideshow to advance
         slideshow.addEventListener('click', (e) => {
-            if (!e.target.closest('.controls')) {
+            if (!e.target.closest('.controls') && !e.target.closest('.dots')) {
                 if (currentSlide < slides.length - 1) {
                     nextSlide();
                 } else {
@@ -329,7 +374,6 @@
             }
         });
 
-        // Keyboard controls
         document.addEventListener('keydown', (e) => {
             if (e.key === 'ArrowRight' || e.key === ' ') {
                 nextSlide();
@@ -338,7 +382,6 @@
             }
         });
 
-        // Dots click
         dots.forEach((dot, index) => {
             dot.addEventListener('click', () => {
                 currentSlide = index;
@@ -346,7 +389,6 @@
             });
         });
 
-        // Initialize progress bar
         updateSlides();
     </script>
 </body>
